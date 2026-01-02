@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecurePass — Ровный генератор паролей</title>
+    <title>SecurePass — Профессиональный сервис генерации безопасных паролей</title>
     
     <!-- Yandex.RTB -->
     <script>window.yaContextCb=window.yaContextCb||[]</script>
@@ -41,9 +41,9 @@
                 <span class="font-bold text-xl tracking-tighter dark:text-white uppercase">SecurePass</span>
             </div>
             <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <button onclick="showTab('main')" class="hover:text-indigo-500 transition">Генератор</button>
-                <button onclick="showTab('edu')" class="hover:text-indigo-500 transition">База знаний</button>
-                <button onclick="showTab('faq')" class="hover:text-indigo-500 transition">Вопросы</button>
+                <button onclick="showTab('main')" class="hover:text-indigo-500 transition">Инструмент</button>
+                <button onclick="showTab('edu')" class="hover:text-indigo-500 transition">Безопасность</button>
+                <button onclick="showTab('faq')" class="hover:text-indigo-500 transition">Помощь</button>
             </nav>
             <button onclick="toggleTheme()" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:ring-2 ring-indigo-500 transition">
                 <i class="fas fa-sun text-yellow-500 hidden dark:block"></i>
@@ -54,21 +54,21 @@
 
     <main class="flex-grow container mx-auto px-4 py-8 max-w-5xl">
         
-        <!-- Рекламный блок №1 -->
+        <!-- Рекламный блок РСЯ (верхний) -->
         <div class="mb-8">
             <div class="ad-label text-center">Реклама</div>
             <div id="yandex_rtb_R-A-1_top" class="min-h-[90px] bg-slate-100 dark:bg-slate-800/50 rounded flex items-center justify-center">
-                <!-- Место для кода РСЯ -->
+                <!-- Контейнер для баннера -->
             </div>
         </div>
 
-        <!-- ВКЛАДКА: ГЛАВНАЯ (ГЕНЕРАТОР) -->
+        <!-- ВКЛАДКА: ГЕНЕРАТОР -->
         <div id="tab-main" class="tab-content active animate-in fade-in duration-500">
             <div class="grid lg:grid-cols-3 gap-8">
                 <div class="lg:col-span-2 space-y-6">
                     <div class="bg-white dark:bg-darkCard p-6 md:p-10 rounded-3xl shadow-xl border border-slate-200 dark:border-slate-700">
-                        <h1 class="text-3xl font-extrabold mb-2 dark:text-white">Генератор ровных паролей</h1>
-                        <p class="text-slate-500 dark:text-slate-400 mb-8">Всё по-честному: шифруем прямо в браузере, концы в воду, никто ничего не узнает.</p>
+                        <h1 class="text-3xl font-extrabold mb-2 dark:text-white">Генератор криптостойких паролей</h1>
+                        <p class="text-slate-500 dark:text-slate-400 mb-8">Создавайте надежные комбинации для защиты ваших аккаунтов. Генерация происходит локально в вашем браузере.</p>
                         
                         <div class="relative mb-10 group">
                             <input type="text" id="passwordOutput" readonly 
@@ -90,42 +90,42 @@
                             <div class="grid grid-cols-2 gap-3">
                                 <label class="flex items-center space-x-2 text-sm cursor-pointer p-2 bg-slate-50 dark:bg-slate-900 rounded-lg border dark:border-slate-700">
                                     <input type="checkbox" id="uppercase" checked class="w-4 h-4 accent-indigo-500">
-                                    <span>Заглавные</span>
+                                    <span>A-Z (Заглавные)</span>
                                 </label>
                                 <label class="flex items-center space-x-2 text-sm cursor-pointer p-2 bg-slate-50 dark:bg-slate-900 rounded-lg border dark:border-slate-700">
                                     <input type="checkbox" id="lowercase" checked class="w-4 h-4 accent-indigo-500">
-                                    <span>Строчные</span>
+                                    <span>a-z (Строчные)</span>
                                 </label>
                                 <label class="flex items-center space-x-2 text-sm cursor-pointer p-2 bg-slate-50 dark:bg-slate-900 rounded-lg border dark:border-slate-700">
                                     <input type="checkbox" id="numbers" checked class="w-4 h-4 accent-indigo-500">
-                                    <span>Цифры</span>
+                                    <span>0-9 (Цифры)</span>
                                 </label>
                                 <label class="flex items-center space-x-2 text-sm cursor-pointer p-2 bg-slate-50 dark:bg-slate-900 rounded-lg border dark:border-slate-700">
                                     <input type="checkbox" id="symbols" checked class="w-4 h-4 accent-indigo-500">
-                                    <span>Символы</span>
+                                    <span>!@# (Символы)</span>
                                 </label>
                             </div>
                         </div>
 
                         <button onclick="generatePassword()" class="w-full py-5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-lg transition-all shadow-xl shadow-indigo-500/20 active:scale-[0.98]">
-                            Сделать красиво
+                            Сгенерировать пароль
                         </button>
                     </div>
                 </div>
 
                 <div class="space-y-6">
                     <div class="bg-indigo-600 rounded-3xl p-8 text-white">
-                        <h3 class="font-bold text-xl mb-4 text-white">Всё под контролем</h3>
-                        <p class="text-indigo-100 text-sm leading-relaxed mb-4">Твои пароли — это твои пароли. Сервис их не видит, в логах не светит. Чисто на твоём железе всё крутится.</p>
+                        <h3 class="font-bold text-xl mb-4">Безопасность данных</h3>
+                        <p class="text-indigo-100 text-sm leading-relaxed mb-4">Приложение не сохраняет и не передает ваши пароли. Алгоритм работает автономно на стороне клиента.</p>
                         <div class="flex items-center space-x-2 text-xs font-bold bg-indigo-500/40 p-3 rounded-lg">
-                            <i class="fas fa-lock"></i>
-                            <span>Шифруем по ГОСТу (почти)</span>
+                            <i class="fas fa-user-shield"></i>
+                            <span>Конфиденциальность гарантирована</span>
                         </div>
                     </div>
                     
                     <div class="ad-label">Реклама</div>
                     <div id="yandex_rtb_R-A-1_side" class="min-h-[300px] bg-slate-100 dark:bg-slate-800/50 rounded flex items-center justify-center border border-dashed border-slate-300 dark:border-slate-700">
-                        <span class="text-[10px] text-slate-400 uppercase">Блок для копеечки</span>
+                        <span class="text-[10px] text-slate-400 uppercase tracking-widest text-center px-4">Место для рекламного объявления</span>
                     </div>
                 </div>
             </div>
@@ -134,14 +134,14 @@
         <!-- ВКЛАДКА: ОБУЧЕНИЕ -->
         <div id="tab-edu" class="tab-content animate-in slide-in-from-bottom-4 duration-500">
             <div class="max-w-3xl mx-auto space-y-8">
-                <h2 class="text-3xl font-bold dark:text-white">Расклад по паролям</h2>
+                <h2 class="text-3xl font-bold dark:text-white">Рекомендации по кибербезопасности</h2>
                 <div class="prose dark:prose-invert text-slate-600 dark:text-slate-400">
-                    <p>Короче, тема такая: если у тебя пароль "12345" или имя кота, то тебя вскроют за пять секунд. Хочешь, чтоб было надёжно — делай по схеме:</p>
-                    <h4 class="text-indigo-500 font-bold mt-6">Чтоб не взломали:</h4>
+                    <p>Использование сложных паролей является первым и наиболее важным шагом в защите вашей цифровой личности.</p>
+                    <h4 class="text-indigo-500 font-bold mt-6">Критерии надежного пароля:</h4>
                     <ul class="list-disc pl-5 space-y-2 mt-4">
-                        <li>Длина минимум 12 знаков (лучше 16, для верности).</li>
-                        <li>Мешай всё в кучу: буквы, цифры, знаки.</li>
-                        <li>Никаких дат рождения и прочей инфы, которую легко пробить.</li>
+                        <li>Минимальная длина — 12-16 символов.</li>
+                        <li>Использование комбинации букв разного регистра, цифр и специальных знаков.</li>
+                        <li>Уникальность — не используйте один и тот же пароль для разных сервисов.</li>
                     </ul>
                 </div>
             </div>
@@ -150,14 +150,14 @@
         <!-- ВКЛАДКА: FAQ -->
         <div id="tab-faq" class="tab-content animate-in slide-in-from-bottom-4 duration-500">
             <div class="max-w-3xl mx-auto space-y-6">
-                <h2 class="text-3xl font-bold dark:text-white mb-8">База ответов</h2>
+                <h2 class="text-3xl font-bold dark:text-white mb-8">Часто задаваемые вопросы</h2>
                 <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border dark:border-slate-700">
-                    <h3 class="font-bold mb-2">Где оседают мои пароли?</h3>
-                    <p class="text-sm text-slate-500">Слушай сюда: база данных нет, сервак ничего не пишет. Страницу закрыл — всё пропало. Всё чисто.</p>
+                    <h3 class="font-bold mb-2">Где сохраняются созданные пароли?</h3>
+                    <p class="text-sm text-slate-500">Пароли не сохраняются в облаке или на серверах. Как только вы закроете вкладку, данные будут удалены из оперативной памяти браузера.</p>
                 </div>
                 <div class="bg-white dark:bg-darkCard p-6 rounded-2xl border dark:border-slate-700">
-                    <h3 class="font-bold mb-2">Зачем тут реклама?</h3>
-                    <p class="text-sm text-slate-500">Ну надо же проект на чем-то держать, на сигареты и хостинг капает — и ладно. Тебе бесплатно, нам польза.</p>
+                    <h3 class="font-bold mb-2">Соответствует ли сервис требованиям безопасности?</h3>
+                    <p class="text-sm text-slate-500">Да, мы используем встроенные криптографические функции JavaScript (Web Crypto API) для получения истинно случайных последовательностей.</p>
                 </div>
             </div>
         </div>
@@ -170,7 +170,7 @@
                 <div class="flex space-x-6 text-sm font-medium text-slate-500">
                     <button onclick="toggleModal('policyModal')" class="hover:text-indigo-500">Политика</button>
                     <button onclick="toggleModal('contactModal')" class="hover:text-indigo-500">Контакты</button>
-                    <button onclick="showTab('main')" class="hover:text-indigo-500">Главная</button>
+                    <button onclick="showTab('main')" class="hover:text-indigo-500">Генератор</button>
                 </div>
                 <div class="text-[10px] text-slate-400 uppercase tracking-widest font-bold">
                     SecurePass &copy; 2024
@@ -179,11 +179,11 @@
         </div>
     </footer>
 
-    <!-- Cookie -->
+    <!-- Cookie Consent -->
     <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 bg-slate-900 text-white p-6 z-[60] border-t border-slate-700 transform translate-y-full transition-transform duration-500">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <p class="text-sm font-light">Мелкие куки нужны для рекламы и чтоб сайт не тормозил. Согласен?</p>
-            <button onclick="acceptCookies()" class="bg-indigo-600 px-8 py-2 rounded-lg font-bold text-sm">По рукам</button>
+            <p class="text-sm font-light">Мы используем файлы cookie для обеспечения корректной работы сервиса и показа релевантной рекламы.</p>
+            <button onclick="acceptCookies()" class="bg-indigo-600 px-8 py-2 rounded-lg font-bold text-sm">Согласен</button>
         </div>
     </div>
 
@@ -192,11 +192,12 @@
         <div class="bg-white dark:bg-darkCard w-full max-w-lg rounded-3xl p-8 shadow-2xl">
             <h2 class="text-2xl font-bold mb-6 dark:text-white">Политика конфиденциальности</h2>
             <div class="text-sm text-slate-600 dark:text-slate-400 space-y-4 max-h-[60vh] overflow-y-auto">
-                <p>Тут всё по понятиям: данные не тырим, за тобой не следим. Все пароли генерируются у тебя под носом.</p>
-                <p>Куки используем стандартные, чтоб Яндекс знал, какую рекламу тебе подкинуть. Остальное — не наше дело.</p>
-                <p>Пользуешься сайтом — значит, в теме и согласен.</p>
+                <p>Настоящая политика описывает подход к обработке данных на сайте SecurePass.</p>
+                <p>1. Мы не собираем персональные данные пользователей. Генерация паролей происходит локально.</p>
+                <p>2. Мы используем аналитические инструменты и рекламные сети (РСЯ), которые могут использовать файлы cookie в соответствии со своими правилами обработки данных.</p>
+                <p>3. Используя данный сайт, вы подтверждаете свое согласие с данными условиями.</p>
             </div>
-            <button onclick="toggleModal('policyModal')" class="mt-8 w-full py-3 bg-slate-100 dark:bg-slate-900 rounded-xl font-bold dark:text-white">Понятно</button>
+            <button onclick="toggleModal('policyModal')" class="mt-8 w-full py-3 bg-slate-100 dark:bg-slate-900 rounded-xl font-bold dark:text-white">Закрыть</button>
         </div>
     </div>
 
@@ -205,15 +206,15 @@
             <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
                 <i class="fas fa-envelope text-indigo-500 text-2xl"></i>
             </div>
-            <h2 class="text-xl font-bold mb-2 dark:text-white">Связь со мной</h2>
-            <p class="text-slate-500 text-sm mb-6">Есть вопрос или тема для разговора? Пиши на почту:</p>
+            <h2 class="text-xl font-bold mb-2 dark:text-white">Обратная связь</h2>
+            <p class="text-slate-500 text-sm mb-6">По вопросам сотрудничества и предложений пишите на электронную почту:</p>
             <a href="mailto:britevich@gmail.com" class="text-indigo-500 font-bold text-lg hover:underline transition-all tracking-wide">britevich@gmail.com</a>
             <button onclick="toggleModal('contactModal')" class="mt-8 block w-full text-slate-400 text-sm">Назад</button>
         </div>
     </div>
 
     <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-6 py-3 rounded-full shadow-2xl opacity-0 transition-all z-[100] text-sm font-medium">
-        Пароль у тебя!
+        Пароль скопирован!
     </div>
 
     <script>
@@ -250,7 +251,7 @@
             if (config.num) charset += dictionary.num;
             if (config.sym) charset += dictionary.sym;
 
-            if (!charset) { document.getElementById('passwordOutput').value = "Выбери настройки"; return; }
+            if (!charset) { document.getElementById('passwordOutput').value = "Выберите параметры"; return; }
 
             let password = "";
             const array = new Uint32Array(length);
@@ -263,7 +264,7 @@
 
         function copyToClipboard() {
             const val = document.getElementById('passwordOutput').value;
-            if (!val || val === "Выбери настройки") return;
+            if (!val || val === "Выберите параметры") return;
             const el = document.createElement('textarea');
             el.value = val;
             document.body.appendChild(el);
